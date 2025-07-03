@@ -1,3 +1,4 @@
+#Python Language 
 length = int(input("Nhập chiều dài cạnh: "))
 total = length ** 2
 change = 0
