@@ -1,0 +1,84 @@
+length = int(input("Nhập chiều dài cạnh: "))
+total = length ** 2
+change = 0
+name = input("Nhập tên hình vuông: ")
+donvi = input("Nhập đơn vị đo chiều dài cạnh: ")
+area = input("Nhập đơn vị tính diện tích: ")
+aera = input("Nhập đơn vị tính diện tích khác(Nhập Héc-ta, nếu không, nhập No): ")
+invalid = 0
+if donvi == "M" and area == "M2" and aera == "No":
+    print("Diện tích hình vuông " + name + " là:")
+    print(str(length) + " ** 2 = " + str(total) + " (" + area + ")")
+    print("=> Diện tích hình vuông " + name + " là " + str(total) + area)
+elif donvi == "Cm" and area == "Cm2" and aera == "No":
+    print("Diện tích hình vuông " + name + " là:")
+    print(str(length) + " ** 2 = " + str(total) + " (" + area + ")")
+    print("=> Diện tích hình vuông " + name + " là " + str(total) + area)
+elif donvi == "Km" and area == "Km2" and aera == "No":
+    print("Diện tích hình vuông " + name + " là:")
+    print(str(length) + " ** 2 = " + str(total) + " (" + area + ")")
+    print("=> Diện tích hình vuông " + name + " là " + str(total) + area)
+elif invalid == 0 and donvi == "Cm" and area == "Cm2" and aera == "Héc-ta":
+    change = total / 100000000
+    print("Diện tích hình vuông " + name + " là:")
+    print(str(length) + " ** 2 = " + str(total) + " (" + area + ")")
+    print("Đổi " + str(total) + " " + area + " = " + str(change) + aera )
+    print("=> Diện tích hình vuông " + name + " là " + str(change) + " " + aera)
+    print("Diện tích hình vuông " + name + " là:")
+    print(str(length) + " ** 2 = " + str(total) + " (" + area + ")")
+    print("Đổi " + str(total) + " " + area + " = " + str(change) + aera )
+    print("=> Diện tích hình vuông " + name + " là " + str(change) + " " + aera)
+elif invalid == 0 and donvi == "M" and area == "M2" and aera == "Héc-ta":
+    change = total / 100000
+    print("Diện tích hình vuông " + name + " là:")
+    print(str(length) + " ** 2 = " + str(total) + " (" + area + ")")
+    print("Đổi " + str(total) + " " + area + " = " + str(change) + aera )
+    print("=> Diện tích hình vuông " + name + " là " + str(change) + " " + aera)
+elif invalid == 0 and donvi == "Km" and area == "Km2" and aera == "Héc-ta":
+    change = total * 100
+    print("Diện tích hình vuông " + name + " là:")
+    print(str(length) + " ** 2 = " + str(total) + " (" + area + ")")
+    print("Đổi " + str(total) + " " + area + " = " + str(change) + " " + aera )
+    print("=> Diện tích hình vuông " + name + " là " + str(change) + " " + aera)
+else:
+    invalid += 1
+
+
+while invalid == 1:
+    print("Đơn vị không hợp lệ (đơn vị đo chiều dài hợp lệ là Km,Cm,M, đơn vị tính diện tích là M2,Km2,Cm2,Héc-ta)")
+    print("đơn vị chiều dài phải thích hợp đơn vị tính diện tích. Vd: Cm-Cm2")
+    donvi = input("Vui lòng nhập lại đơn vị đo chiều dài cạnh: ")
+    area =input("Vui lòng nhập lại đơn vị tính diện tích(Không nhập Héc-ta): ")
+    aera = input("Nhập đơn vị tính diện tích khác(Nhập Héc-ta, nếu không, nhập No): ")
+    if donvi == "M" and area == "M2" or donvi == "Cm" and area == "Cm2" or donvi == "Km" and area == "Km2" and aera == "No":
+       invalid -= 1
+if invalid == 0 and donvi == "M" and area == "M2" and aera == "No":
+    print("Diện tích hình vuông " + name + " là:")
+    print(str(length) + " ** 2 = " + str(total) + " (" + area + ")")
+    print("=> Diện tích hình vuông " + name + " là " + str(total) + area)
+elif invalid == 0 and donvi == "Cm" and area == "Cm2" and aera == "No":
+    print("Diện tích hình vuông " + name + " là:")
+    print(str(length) + " ** 2 = " + str(total) + " (" + area + ")")
+    print("=> Diện tích hình vuông " + name + " là " + str(total) + area)
+elif invalid == 0 and donvi == "Km" and area == "Km2" and aera == "No":
+    print("Diện tích hình vuông " + name + " là:")
+    print(str(length) + " ** 2 = " + str(total) + " (" + area + ")")
+    print("=> Diện tích hình vuông " + name + " là " + str(total) + area)
+elif invalid == 0 and donvi == "Cm" and area == "Cm2" and aera == "Héc-ta":
+    change = total / 100000000
+    print("Diện tích hình vuông " + name + " là:")
+    print(str(length) + " ** 2 = " + str(total) + " (" + area + ")")
+    print("Đổi " + str(total) + " " + area + " = " + str(change) + aera )
+    print("=> Diện tích hình vuông " + name + " là " + str(change) + " " + aera)
+elif invalid == 0 and donvi == "M" and area == "M2" and aera == "Héc-ta":
+    change = total / 100000
+    print("Diện tích hình vuông " + name + " là:")
+    print(str(length) + " ** 2 = " + str(total) + " (" + area + ")")
+    print("Đổi " + str(total) + " " + area + " = " + str(change) + aera )
+    print("=> Diện tích hình vuông " + name + " là " + str(change) + " " + aera)
+elif invalid == 0 and donvi == "Km" and area == "Km2" and aera == "Héc-ta":
+    change = total * 100
+    print("Diện tích hình vuông " + name + " là:")
+    print(str(length) + " ** 2 = " + str(total) + " (" + area + ")")
+    print("Đổi " + str(total) + " " + area + " = " + str(change) + " " + aera )
+    print("=> Diện tích hình vuông " + name + " là " + str(change) + " " + aera)
