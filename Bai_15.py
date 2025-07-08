@@ -19,3 +19,5 @@ if a != 0:
         x1 = -b + math.sqrt(delta) / (2 * a)
         x2 = -b - math.sqrt(delta) / (2 * a)
     print("Có nghiệm kép x1 = {0} và x2 = {1}".format (x1,x2))
+else:
+    print("Không phải phương trình bậc 2")
