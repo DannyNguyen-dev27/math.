@@ -1,4 +1,4 @@
-#Python, bài 14, câu lệnh rẻ nhánh if else
+#Python, bài 14, câu lệnh rẽ nhánh if else
 score = float(input("Nhập số điểm của học sinh: ")) 
 #sử dụng toán tử điều kiện if - else
 if score >= 9:
