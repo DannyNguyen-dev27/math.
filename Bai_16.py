@@ -19,7 +19,7 @@ ab = math.sqrt((xB - xA) ** 2 + (yB - yA) ** 2)
 ac = math.sqrt((xC - xA) ** 2 + (yC - yA) ** 2)
 bc = math.sqrt((xC - xA) ** 2 + (yC - yA) ** 2)
 # xác định 3 điểm có tạo thành 1 tam giác
-if (ab + ac > bc) and (bc + ab > ac) or (ac + bc > ab):
+if (ab + ac > bc) and (bc + ab > ac) and (ac + bc > ab):
     #tính chu vi
     chu_vi = ab + ac + bc
     print("chu vi hình tam giác là ",chu_vi)
