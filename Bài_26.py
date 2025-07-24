@@ -1,4 +1,5 @@
-#Thư viện random
+#Python, bài 26, bài tập phiếu trúng thưởng, bài này bin làm sai rồi nên bin làm lại.
+#Thư viện random 
 import random
 #khai báo set
 Thung_Phieu = set()
